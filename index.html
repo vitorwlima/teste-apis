@@ -10,16 +10,22 @@
 </head>
 
 <body>
-  <form id="cep" name="cep">
-    <label for="cep">Insira seu CEP</label>
-    <input type="number" id="cep">
-    <input type="submit" id="submit" value="Buscar">
-  </form>
-  <p class="cep">CEP:</p>
-  <p class="cidadeUF">Cidade - UF:</p>
-  <p class="ddd">DDD:</p>
-  <p class="bairro">Bairro:</p>
-  <p class="logradouro">Rua:</p>
+  <div class="grid-cep">
+    <div class="form">
+      <form id="cep" name="cep">
+        <label for="cep">Insira seu CEP:</label>
+        <input type="number" id="cep" class="inputcep">
+        <input type="submit" id="submit" value="Buscar" class="btnsubmit">
+      </form>
+    </div>
+    <div class="info">
+      <p class="cep">CEP:</p>
+      <p class="cidadeUF">Cidade - UF:</p>
+      <p class="ddd">DDD:</p>
+      <p class="bairro">Bairro:</p>
+      <p class="logradouro">Rua:</p>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 

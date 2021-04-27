@@ -1,0 +1,46 @@
+.grid-cep {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  margin-top: 40px;
+  margin-left: 40px;
+  grid-gap: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+form label {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.inputcep {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.btnsubmit {
+  padding: 10px 20px 10px 20px;
+  background-color: #ccc;
+  border: 2px solid black;
+  font-size: 0.75rem;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.info {
+  font-size: 1.2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
