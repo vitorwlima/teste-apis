@@ -1,7 +1,6 @@
 function scriptCep() {
   const form = document.forms.cep;
   const btnSubmit = form.querySelector("#submit");
-  const info = document.querySelectorAll("p");
   let cepInserido;
 
   btnSubmit.addEventListener("click", alterarInfo);
@@ -37,3 +36,19 @@ function scriptCep() {
   }
 }
 scriptCep();
+
+function scriptBTC() {
+  const real = document.querySelector(".real");
+
+  function updateData() {
+    fetch("https://blockchain.info/ticker")
+      .then((response) => response.json())
+      .then((data) => {
+        real.innerText = ("R$ " + data.BRL.buy).replace(".", ",");
+      });
+  }
+  updateData();
+
+  setInterval(updateData, 2000);
+}
+scriptBTC();

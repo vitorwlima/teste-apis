@@ -16,10 +16,11 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-form label {
+form label,
+h1 {
   font-family: "Roboto";
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .inputcep {
@@ -37,10 +38,15 @@ form label {
   font-weight: 500;
 }
 
-.info {
+.info,
+p {
   font-size: 1.2rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   display: flex;
   flex-direction: column;
   width: max-content;
+}
+
+.currency {
+  grid-column: 1/3;
 }
